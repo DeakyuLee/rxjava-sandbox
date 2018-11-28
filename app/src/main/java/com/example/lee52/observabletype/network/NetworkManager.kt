@@ -16,7 +16,7 @@ object NetworkManager {
                 .build()
     }
 
-    private val userService: UserService by lazy {
+    val userService: UserService by lazy {
         retrofit.create(UserService::class.java)
     }
 

@@ -9,6 +9,7 @@ import com.example.lee52.observabletype.observableType.BasicObservable
 import com.example.lee52.observabletype.operator.FlatMapOperator
 import com.example.lee52.observabletype.operator.MapOperator
 import com.example.lee52.observabletype.subject.PublishSubjectExample
+import com.example.lee52.observabletype.subject.ReplaySubjectExample
 
 class MainActivity : AppCompatActivity() {
 
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 //                loader.visibility = View.GONE
 //            })
 
-            PublishSubjectExample().doSomeWork()
+            ReplaySubjectExample().doSomeWork()
         }
     }
 }

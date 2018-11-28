@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ObservableType</string>
+    <string name="do_action">Do action</string>
 </resources>

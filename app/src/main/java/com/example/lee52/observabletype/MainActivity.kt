@@ -8,6 +8,7 @@ import android.widget.ProgressBar
 import com.example.lee52.observabletype.observableType.BasicObservable
 import com.example.lee52.observabletype.operator.FlatMapOperator
 import com.example.lee52.observabletype.operator.MapOperator
+import com.example.lee52.observabletype.subject.PublishSubjectExample
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,13 +35,15 @@ class MainActivity : AppCompatActivity() {
 //                loader.visibility = View.GONE
 //            })
 
-            FlatMapOperator().getFlattenedUsers({
-                actionButton.visibility = View.GONE
-                loader.visibility = View.VISIBLE
-            }, {
-                actionButton.visibility = View.VISIBLE
-                loader.visibility = View.GONE
-            })
+//            FlatMapOperator().getFlattenedUsers({
+//                actionButton.visibility = View.GONE
+//                loader.visibility = View.VISIBLE
+//            }, {
+//                actionButton.visibility = View.VISIBLE
+//                loader.visibility = View.GONE
+//            })
+
+            PublishSubjectExample().doSomeWork()
         }
     }
 }

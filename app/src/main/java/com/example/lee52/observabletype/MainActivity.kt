@@ -8,6 +8,7 @@ import android.widget.ProgressBar
 import com.example.lee52.observabletype.observableType.BasicObservable
 import com.example.lee52.observabletype.operator.FlatMapOperator
 import com.example.lee52.observabletype.operator.MapOperator
+import com.example.lee52.observabletype.subject.BehaviorSubjectExample
 import com.example.lee52.observabletype.subject.PublishSubjectExample
 import com.example.lee52.observabletype.subject.ReplaySubjectExample
 
@@ -44,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 //                loader.visibility = View.GONE
 //            })
 
-            ReplaySubjectExample().doSomeWork()
+            BehaviorSubjectExample().doSomeWork()
         }
     }
 }

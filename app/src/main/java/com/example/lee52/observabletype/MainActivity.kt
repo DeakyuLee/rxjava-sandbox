@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.ProgressBar
 import com.example.lee52.observabletype.observableType.BasicObservable
+import com.example.lee52.observabletype.operator.FlatMapOperator
 import com.example.lee52.observabletype.operator.MapOperator
 
 class MainActivity : AppCompatActivity() {
@@ -24,7 +25,16 @@ class MainActivity : AppCompatActivity() {
 
         actionButton.setOnClickListener {
 //            BasicObservable().doSomeWork()
-            MapOperator().doSomeWork({
+
+//            MapOperator().doSomeWork({
+//                actionButton.visibility = View.GONE
+//                loader.visibility = View.VISIBLE
+//            }, {
+//                actionButton.visibility = View.VISIBLE
+//                loader.visibility = View.GONE
+//            })
+
+            FlatMapOperator().getFlattenedUsers({
                 actionButton.visibility = View.GONE
                 loader.visibility = View.VISIBLE
             }, {

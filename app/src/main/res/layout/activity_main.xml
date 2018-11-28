@@ -16,14 +16,82 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <Button
-        android:id="@+id/button_for_action"
+    <TextView
+        android:id="@+id/text_operator_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/do_action"
+        android:layout_marginTop="15dp"
+        android:text="@string/operators"
+        android:textSize="18sp"
+        android:textColor="#000"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/button_operator_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/map_operator"
+        app:layout_constraintTop_toBottomOf="@id/text_operator_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button_operator_flatmap"/>
+
+    <Button
+        android:id="@+id/button_operator_flatmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flatmap_operator"
+        app:layout_constraintTop_toBottomOf="@id/text_operator_title"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintLeft_toRightOf="@id/button_operator_map"/>
+
+    <TextView
+        android:id="@+id/text_subject_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/subjects"
+        android:textSize="18sp"
+        android:textColor="#000"
+        app:layout_constraintTop_toBottomOf="@id/button_operator_flatmap"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/button_subject_publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/publish_subject"
+        app:layout_constraintTop_toBottomOf="@id/text_subject_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button_subject_replay"/>
+
+    <Button
+        android:id="@+id/button_subject_replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/replay_subject"
+        app:layout_constraintTop_toBottomOf="@id/text_subject_title"
+        app:layout_constraintLeft_toRightOf="@id/button_subject_publish"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/button_subject_behavior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/behavior_subject"
+        app:layout_constraintTop_toBottomOf="@id/button_subject_publish"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button_subject_async"/>
+
+    <Button
+        android:id="@+id/button_subject_async"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/async_subject"
+        app:layout_constraintTop_toBottomOf="@id/button_subject_replay"
+        app:layout_constraintLeft_toRightOf="@id/button_subject_behavior"
+        app:layout_constraintRight_toRightOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>

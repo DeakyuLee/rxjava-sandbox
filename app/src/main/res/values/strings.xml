@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">ObservableType</string>
     <string name="do_action">Do action</string>
+    <string name="map_operator">Map Operator</string>
+    <string name="operators">Operators</string>
+    <string name="flatmap_operator">Flatmap Operator</string>
+    <string name="subjects">Subjects</string>
+    <string name="publish_subject">Publish Subject</string>
+    <string name="replay_subject">Replay Subject</string>
+    <string name="behavior_subject">Behavior Subject</string>
+    <string name="async_subject">Async Subject</string>
 </resources>
